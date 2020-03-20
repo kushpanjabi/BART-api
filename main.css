@@ -1,8 +1,75 @@
-main {
-    
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #94a8b3;
+    font-size: 12px;
 }
 
-header > img {
-    width: 15%;
+header {
+    text-align: center;
+    margin: 5% 10%;
+}
+
+.logo{
+    width: 50%;
+    margin: 10% 0%;
     height: auto;
+    opacity: 1;
+}
+
+
+
+.skyline {
+    width: 50%;
+    height: auto;
+    opacity: 0.5;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    border: 1px solid black;
+    padding: 5%;
+    border-radius: 12px;
+    background-color: white;
+    width: 30%;
+    justify-content: flex-start;
+    text-align: center;
+    box-shadow: 1px 1px #888888;
+}
+
+
+select {
+    margin: 10%;
+}
+
+
+/* larger screens */
+
+@media screen and (min-width: 768px) {
+    
+    body {
+        font-size: 18px;
+    }
+
+    .logo{
+        width: 15%;
+        margin: 1% 1%;
+    }
+
+    .search{
+        padding: 2%;
+        width: 40%;
+    }
+
+    select {
+        margin: 5%;
+    }
+
 }

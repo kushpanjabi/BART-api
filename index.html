@@ -3,28 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find out your needed BART information here">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BART</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
-        <img src="images/bart-logo.png" alt="bart logo">
-        <h1>BART</h1>
+        <img class="logo" src="images/bart-logo.png" alt="bart logo"><br>
+        <img class="skyline" src="images/sf-skyline.png" alt="sf skyline">
     </header>
-<main>
 
-    <section class="search">
-        <form id="js-search-form">
-            <label for="from-station">Station:</label>
-                <input type="text" name="" id="">
-        </form> 
-    </section>
+    <main>
+        <section class="search">
+            <form class="js-search-form">
+                <label for="from-station">Real Time Departures</label><br>
+                    <select name="stations" class="station-options">
+                        <option value="">Choose Station</option>
+                        <option value="12TH">12th St. Oakland</option>
+                        <option value="19TH">19th St. Oakland</option>
+                        <option value="16TH">16th St. Mission</option>
+                        <option value="24TH">24th St. Mission</option>
+                        <option value="ANTC">Antioch</option>
+                        <option value="ASHB">Ashby</option>
+                        <option value="BALB">Balboa Park</option>
+                        <option value="CAST">Castro Valley</option>
+                        <option value="CIVC">Civic Center/UN Plaza</option>
+                        <option value="COLS">Coliseum</option>
+                        <option value="COLM">Colma</option>
+                        <option value="CONC">Concord</option>
+                        <option value="DALY">Daly City</option>
+                        <option value="DBRK">Downtown Berkeley</option>
+                        <option value="DUBL">Dublin/Pleasanton</option>
+                        <option value="DELN">El Cerrito Del Norte</option>
+                        <option value="PLZA">El Cerrito Plaza</option>
+                        <option value="EMBR">Embarcadero</option>
+                        <option value="FRMT">Fremont</option>
+                        <option value="FTVL">Fruitvale</option>
+                        <option value="GLEN">Glen Park</option>
+                        <option value="HAYW">Hayward</option>
+                        <option value="LAFY">Lafayette</option>
+                        <option value="LAKE">Lake Merritt</option>
+                        <option value="MCAR">MacArthur</option>
+                        <option value="MLBR">Millbrae</option>
+                        <option value="MONT">Montgomery St.</option>
+                        <option value="NBRK">North Berkeley</option>
+                        <option value="NCON">North Concord/Martinez</option>
+                        <option value="OAKL">Oakland International Airport</option>
+                        <option value="ORIN">Orinda</option>
+                        <option value="PITT">Pittsburg/Bay Point</option>
+                        <option value="PCTR">Pittsburgh Center</option>
+                        <option value="PHIL">Pleasant Hill/Contra Costa Centre</option>
+                        <option value="POWL">Powell St.</option>
+                        <option value="RICH">Richmond</option>
+                        <option value="ROCK">Rockridge</option>
+                        <option value="SBRN">San Bruno</option>
+                        <option value="SFIA">San Francisco International Airport</option>
+                        <option value="SANL">San Leandro</option>
+                        <option value="SHAY">South Hayward</option>
+                        <option value="UCTY">Union City</option>
+                        <option value="WCRK">Walnut Creek</option>
+                        <option value="WARM">Warm Springs</option>
+                        <option value="WDUB">West Dublin/Pleasanton</option>
+                        <option value="WOAK">West Oakland</option>
+                    </select>
+                    <br>
+                <button type="submit">Submit</button>
+            </form> 
+        </section>
+    </main>
 
-    
-</main>
-
+    <script src="index.js"></script>
 </body>
-
 </html>
