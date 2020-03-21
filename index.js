@@ -21,26 +21,46 @@ function displayDepartures(responseJson){
       `)
       for (j=0; j<responseJson.root.station[0].etd[i].estimate.length; j++) {
         $('#search').append(`
-      <p class="${responseJson.root.station[0].etd[i].estimate[j].color} lh">${responseJson.root.station[0].etd[i].estimate[j].minutes} mins</p>
-
+      <p class="${responseJson.root.station[0].etd[i].estimate[j].color} lh eta">${responseJson.root.station[0].etd[i].estimate[j].minutes} mins</p>
     `)
     } 
     }
-  
-}
+    }
+
+function getAdvisories() {
+  fetch(`https://api.bart.gov/api/bsa.aspx?cmd=bsa&key=${apiKey}&json=y`)
+    .then(response => response.json())
+      .then(responseJsonAdv => 
+        displayAdvisories(responseJsonAdv));
+    }
+
+function displayAdvisories(responseJsonAdv){
+  console.log(responseJsonAdv);
+  $('#advisory').append(`
+  <ul>
+    <li><p class=adv-text>${responseJsonAdv.root.bsa["0"].description["#cdata-section"]}</li></p>
+  </ul>
+  `)
+  }
+
   
   function watchSubmit() {
     $('.js-search-form').submit(function(event){
       event.preventDefault();
   
       let userStnInput = $('.station-options').val();
-  
+
+      if (userStnInput === "") {
+        alert('You must select a station!')
+      } else {
       getStationDepartures(userStnInput);
-    });
+    }
+  });
   }
 
   function runApp() {
       watchSubmit();
+      getAdvisories();
   }
 
   $(runApp);

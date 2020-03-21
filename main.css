@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
+    font-family: -apple-system, 'avenir next';
   }
 
 body {
     background-color: #dde4e7;
+    background-image: linear-gradient(#536976, #292E49);
     font-size: 12px;
-    font-family: -apple-system, 'avenir next';
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -34,6 +37,9 @@ header {
 .lh {
     line-height: 10px;
 }
+.eta {
+    font-family: -apple-system, 'avenir next';
+}
 
 .time {
     font-size: 8px;
@@ -55,7 +61,7 @@ hr {
 .skyline {
     width: 50%;
     height: auto;
-    opacity: 0.7
+    opacity: 0.3;
 }
 
 
@@ -110,6 +116,12 @@ section {
     text-align: center;
 }
 
+.adv-text {
+    font-size: 15px;
+    text-align: left;
+    color: red;
+}
+
 .station-name {
     line-height: 0px;
 }
@@ -135,7 +147,7 @@ select {
 }
 
 .typewriter h1 {
-    color: black;
+    color: white;
     font-family: "Lucida Console", Monaco, monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
@@ -156,7 +168,7 @@ select {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: black }
+    50% { border-color: white }
   }
 
 /* larger screens */
