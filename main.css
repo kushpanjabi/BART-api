@@ -3,7 +3,7 @@
   }
 
 body {
-    background-color: #7e9cac;
+    background-color: #dde4e7;
     font-size: 12px;
     font-family: -apple-system, 'avenir next';
 }
@@ -44,7 +44,7 @@ hr {
     border: 0.5px solid #8c8b8b;
     width: 40%;
 }
-
+ 
 .table-label {
     color: black;
     font-size: 2px;
@@ -81,30 +81,32 @@ main {
     color: seagreen;
 }
 
+.RED{
+    color: #ff0000;
+}
+
 section {
     margin: 3% 10%;
 }
 
 .search {
-    border: 1px solid black;
+    border: 0.1px solid black;
     padding: 5%;
     border-radius: 12px;
     background-color: white;
     width: 65%;
     justify-content: flex-start;
     text-align: center;
-    box-shadow: 1px 1px #888888;
 }
 
 .advisory {
-    border: 1px solid black;
+    border: 0.1px solid black;
     padding: 5%;
     border-radius: 12px;
     background-color: white;
     width: 65%;
     justify-content: flex-start;
     text-align: center;
-    box-shadow: 1px 1px #888888;
 }
 
 .station-name {
@@ -130,6 +132,31 @@ select {
     opacity: 0.5;
     
 }
+
+.typewriter h1 {
+    color: black;
+    font-family: "Lucida Console", Monaco, monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .4s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
 
 /* larger screens */
 
