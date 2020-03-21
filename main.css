@@ -36,12 +36,12 @@ header {
 
 .time {
     font-size: 8px;
-    color: gray;
+    color: black;
     line-height: 1px;
 }
 
 hr {
-    border: 1px solid #8c8b8b;
+    border: 0.5px solid #8c8b8b;
     width: 40%;
 }
 
@@ -63,6 +63,18 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.BLUE {
+    color:#0099cc;
+}
+
+.YELLOW {
+    color: gold;
+}
+
+.ORANGE {
+    color: #ff9933;
 }
 
 section {
@@ -150,9 +162,7 @@ select {
 
     .time{
         font-size: 12px;
-        color: gray;
-        font-weight: lighter;
-
+        color: black;
     }
 
     hr {

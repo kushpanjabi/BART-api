@@ -11,9 +11,8 @@ function displayDepartures(responseJson){
   console.log(responseJson);
   $('#search').empty();
   $('#search').append(`
-    <p class="station-name">${responseJson.root.station[0].name}<p>
-    <p class="time inline">Current Time: ${responseJson.root.time}</p><hr>
-    <h2>Next Trains:</h2>
+    <p class="station-name">${responseJson.root.station[0].name} Trains<p>
+    <p class="time inline">${responseJson.root.time}</p><hr>
     `)
   
     for (i=0; i<responseJson.root.station[0].etd.length; i++){
@@ -22,7 +21,7 @@ function displayDepartures(responseJson){
       `)
       for (j=0; j<responseJson.root.station[0].etd[i].estimate.length; j++) {
         $('#search').append(`
-      <p class="red lh">${responseJson.root.station[0].etd[i].estimate[j].minutes} mins</p>
+      <p class="${responseJson.root.station[0].etd[i].estimate[j].color} lh">${responseJson.root.station[0].etd[i].estimate[j].minutes} mins</p>
 
     `)
     } 
