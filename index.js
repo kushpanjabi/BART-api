@@ -4,10 +4,29 @@ function getStationDepartures(stnInput) {
     fetch(`http://api.bart.gov/api/etd.aspx?cmd=etd&key=${apiKey}&orig=${stnInput}&json=y`)
       .then(response => response.json())
       .then(responseJson => 
-        console.log(responseJson));
+        displayDepartures(responseJson));
   }
 
-function displayDepartures(){
+function displayDepartures(responseJson){
+  console.log(responseJson);
+  $('#search').empty();
+  $('#search').append(`
+    <p class="station-name">${responseJson.root.station[0].name}<p>
+    <p class="time inline">Current Time: ${responseJson.root.time}</p><hr>
+    <h2>Next Trains:</h2>
+    `)
+  
+    for (i=0; i<responseJson.root.station[0].etd.length; i++){
+    $('#search').append(`
+      <p class="destination">${responseJson.root.station[0].etd[i].destination}</p>
+      `)
+      for (j=0; j<responseJson.root.station[0].etd[i].estimate.length; j++) {
+        $('#search').append(`
+      <p class="red lh">${responseJson.root.station[0].etd[i].estimate[j].minutes} mins</p>
+
+    `)
+    } 
+    }
   
 }
   
