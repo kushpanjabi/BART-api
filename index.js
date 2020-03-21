@@ -1,7 +1,7 @@
 const apiKey = 'MW9S-E7SL-26DU-VV8V';
 
 function getStationDepartures(stnInput) {
-    fetch(`http://api.bart.gov/api/etd.aspx?cmd=etd&key=${apiKey}&orig=${stnInput}&json=y`)
+    fetch(`https://api.bart.gov/api/etd.aspx?cmd=etd&key=${apiKey}&orig=${stnInput}&json=y`)
       .then(response => response.json())
       .then(responseJson => 
         displayDepartures(responseJson));
