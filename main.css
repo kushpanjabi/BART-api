@@ -3,7 +3,7 @@
   }
 
 body {
-    background-color: #94a8b3;
+    background-color: #7e9cac;
     font-size: 12px;
     font-family: -apple-system, 'avenir next';
 }
@@ -180,6 +180,10 @@ select {
 
     .station-name {
         font-size: 20px;
+    }
+
+    .adv-title {
+        font-size: 18px;
     }
 
 }
