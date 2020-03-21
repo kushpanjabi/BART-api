@@ -10,7 +10,8 @@ body {
 
 header {
     text-align: center;
-    margin: 5% 10%;
+    margin: 5% 5%;
+    font-size: 8px;
 }
 
 
@@ -172,6 +173,11 @@ select {
         flex-direction: unset;
         align-items: flex-start;
     }
+
+    header {
+        font-size: 18px;
+    }
+
 
     section {
         margin: 5% 5%;
