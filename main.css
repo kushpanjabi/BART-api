@@ -5,6 +5,7 @@
 body {
     background-color: #94a8b3;
     font-size: 12px;
+    font-family: -apple-system, 'avenir next';
 }
 
 header {
@@ -12,13 +13,42 @@ header {
     margin: 5% 10%;
 }
 
-.logo{
+
+.logo {
     width: 50%;
     margin: 10% 0%;
     height: auto;
     opacity: 1;
 }
 
+.red {
+    color: red;
+    line-height: 0px;
+}
+
+.inline {
+    display: inline;
+}
+
+.lh {
+    line-height: 10px;
+}
+
+.time {
+    font-size: 8px;
+    color: gray;
+    line-height: 1px;
+}
+
+hr {
+    border: 1px solid #8c8b8b;
+    width: 40%;
+}
+
+.table-label {
+    color: black;
+    font-size: 2px;
+}
 
 
 .skyline {
@@ -31,6 +61,12 @@ header {
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin: 3% 10%;
 }
 
 .search {
@@ -44,6 +80,29 @@ main {
     box-shadow: 1px 1px #888888;
 }
 
+.advisory {
+    border: 1px solid black;
+    padding: 5%;
+    border-radius: 12px;
+    background-color: white;
+    width: 65%;
+    justify-content: flex-start;
+    text-align: center;
+    box-shadow: 1px 1px #888888;
+}
+
+.station-name {
+    line-height: 0px;
+}
+
+.left {
+    text-align: left;
+}
+
+.destination {
+    font-size: 14px;
+    font-weight: bold;
+}
 
 select {
     margin: 10%;
@@ -56,6 +115,17 @@ select {
     
     body {
         font-size: 18px;
+        margin: 3% 15%;
+    }
+
+    main {
+        justify-content: flex-start;
+        flex-direction: unset;
+        align-items: flex-start;
+    }
+
+    section {
+        margin: 5% 5%;
     }
 
     .logo{
@@ -64,12 +134,24 @@ select {
     }
 
     .search{
-        padding: 2%;
+        padding: 3%;
         width: 40%;
     }
 
     select {
         margin: 5%;
+    }
+
+    .time{
+        font-size: 12px;
+        color: gray;
+        font-weight: lighter;
+
+    }
+
+    hr {
+        border: 1px solid #8c8b8b;
+        width: 20%%;
     }
 
 }
