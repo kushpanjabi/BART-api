@@ -108,6 +108,12 @@ select {
     margin: 10%;
 }
 
+.small-logo{
+    width: 5%;
+    height: auto;
+    opacity: 0.5;
+    
+}
 
 /* larger screens */
 

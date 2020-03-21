@@ -18,7 +18,7 @@ function displayDepartures(responseJson){
   
     for (i=0; i<responseJson.root.station[0].etd.length; i++){
     $('#search').append(`
-      <p class="destination">${responseJson.root.station[0].etd[i].destination}</p>
+      <p class="destination">${responseJson.root.station[0].etd[i].destination} <img src="images/bart-logo-sm.png" alt="small bart logo" class="small-logo"></p>
       `)
       for (j=0; j<responseJson.root.station[0].etd[i].estimate.length; j++) {
         $('#search').append(`
