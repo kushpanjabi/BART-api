@@ -17,6 +17,9 @@ header {
     font-size: 8px;
 }
 
+.ls-circle{
+    list-style-type: circle;
+}
 
 .logo {
     width: 50%;
