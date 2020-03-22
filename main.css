@@ -37,6 +37,11 @@ header {
     display: inline;
 }
 
+.med-logo{
+    width: 7%;
+    height: auto;
+}
+
 .lh {
     line-height: 10px;
 }
@@ -238,6 +243,11 @@ select {
     .adv-text {
         font-size: 15px;
         text-align: left;
+    }
+
+    .med-logo{
+        width: 8%;
+        height: auto;
     }
 
 }

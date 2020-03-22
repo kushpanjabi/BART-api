@@ -11,7 +11,7 @@ function displayDepartures(responseJson){
   console.log(responseJson);
   $('#search').empty();
   $('#search').append(`
-    <p class="station-name">${responseJson.root.station[0].name} Trains<p>
+    <p class="station-name">${responseJson.root.station[0].name}<p>
     <p class="time inline">${responseJson.root.time}</p><hr>
     `)
   
