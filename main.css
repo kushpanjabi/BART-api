@@ -100,7 +100,7 @@ section {
     border: 0.1px solid black;
     padding: 5%;
     border-radius: 12px;
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     width: 65%;
     justify-content: flex-start;
     text-align: center;
@@ -117,9 +117,10 @@ section {
 }
 
 .adv-text {
-    font-size: 15px;
+    font-size: 12px;
     text-align: left;
     color: red;
+    padding-right: 30px;
 }
 
 .station-name {
@@ -229,6 +230,11 @@ select {
 
     .adv-title {
         font-size: 18px;
+    }
+
+    .adv-text {
+        font-size: 15px;
+        text-align: left;
     }
 
 }
