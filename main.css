@@ -214,6 +214,11 @@ select {
         width: 40%;
     }
 
+    .advisory{
+        padding: 3%;
+        width: 40%;
+    }
+
     select {
         margin: 5%;
     }
