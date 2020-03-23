@@ -36,9 +36,9 @@ function getAdvisories() {
 
 function displayAdvisories(responseJsonAdv){
   console.log(responseJsonAdv);
-  $('#advisory').append(`
+  $('.advisory').append(`
   <ul>
-    <li class="ls-circle"><p class=adv-text>${responseJsonAdv.root.bsa["0"].description["#cdata-section"]}</li></p>
+    <li class="ls-none"><p class=adv-text>${responseJsonAdv.root.bsa["0"].description["#cdata-section"]}</li></p>
   </ul>
   `)
   }
