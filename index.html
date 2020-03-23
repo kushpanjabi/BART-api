@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time BART train status checker">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bay area rapid transit</title>
     <link rel="stylesheet" href="main.css">
@@ -20,7 +21,7 @@
     <main>
         <section class="search" id="search">
             <form class="js-search-form">
-                <label for="from-station">Real Time Departures  <img src=images/train.png class="med-logo" alt="train icon"></label><br>
+                <label id="from-station">Real Time Departures  <img src=images/train.png class="med-logo" alt="train icon"></label><br>
                     <select name="stations" class="station-options">
                         <option value="">Choose Station</option>
                         <option value="12TH">12th St. Oakland</option>
@@ -76,11 +77,8 @@
         </section>
 
         <section class="advisory" id="advisory">
-            <label class="adv-title">BART Advisories <img src=images/caution.png class="med-logo" alt="caution icon"><label>
-
-
+            <label class="adv-title">BART Advisories <img src=images/caution.png class="med-logo" alt="caution icon"></label>
         </section>
-
     </main>
 
     <script src="index.js"></script>
