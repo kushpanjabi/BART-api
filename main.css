@@ -151,7 +151,7 @@ select {
     margin: 10%;
 }
 
-.small-logo{
+.small-logo {
     width: 5%;
     height: auto;
     opacity: 0.5;
@@ -206,7 +206,7 @@ select {
         margin: 5% 5%;
     }
 
-    .logo{
+    .logo {
         width: 15%;
         margin: 1% 1%;
     }
@@ -252,7 +252,7 @@ select {
         text-align: left;
     }
 
-    .med-logo{
+    .med-logo {
         width: 8%;
         height: auto;
     }
