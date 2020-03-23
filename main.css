@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: -apple-system, 'avenir next';
-  }
+}
 
 body {
     background-color: #dde4e7;
@@ -45,6 +45,7 @@ header {
 .lh {
     line-height: 10px;
 }
+
 .eta {
     font-family: -apple-system, 'avenir next';
 }
@@ -65,13 +66,11 @@ hr {
     font-size: 2px;
 }
 
-
 .skyline {
     width: 50%;
     height: auto;
     opacity: 0.3;
 }
-
 
 main {
     display: flex;
@@ -92,11 +91,11 @@ main {
     color: #ff9933;
 }
 
-.GREEN{
+.GREEN {
     color: seagreen;
 }
 
-.RED{
+.RED {
     color: #ff0000;
 }
 
