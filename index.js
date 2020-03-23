@@ -1,11 +1,17 @@
 const apiKey = 'MW9S-E7SL-26DU-VV8V';
 
+
+// Fetches the BART API data for Real Time Estimates //
+
 function getStationDepartures(stnInput) {
     fetch(`https://api.bart.gov/api/etd.aspx?cmd=etd&key=${apiKey}&orig=${stnInput}&json=y`)
       .then(response => response.json())
       .then(responseJson => 
         displayDepartures(responseJson));
   }
+
+
+// Displays the Real Time Departure information by station selected // 
 
 function displayDepartures(responseJson){
   console.log(responseJson);
@@ -27,12 +33,17 @@ function displayDepartures(responseJson){
     }
     }
 
+// Fetches the BART API data for advisories //
+
 function getAdvisories() {
   fetch(`https://api.bart.gov/api/bsa.aspx?cmd=bsa&key=${apiKey}&json=y`)
     .then(response => response.json())
       .then(responseJsonAdv => 
         displayAdvisories(responseJsonAdv));
     }
+
+
+// Displays the current BART advisories //
 
 function displayAdvisories(responseJsonAdv){
   console.log(responseJsonAdv);
@@ -43,7 +54,9 @@ function displayAdvisories(responseJsonAdv){
   `)
   }
 
-  
+
+// Listens for a submit button click, pulls data, and displays chosen station departure estimates //
+
   function watchSubmit() {
     $('.js-search-form').submit(function(event){
       event.preventDefault();
